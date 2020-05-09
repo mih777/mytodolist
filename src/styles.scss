@@ -1,0 +1,65 @@
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    //border: 1px solid gray;
+    overflow: hidden;
+  }
+
+.fas ,fa-edit {
+    
+}  
+
+.fas ,fa-trash-alt {
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+.trash-icon:hover {
+    color: rgb(201, 1, 1);
+}
+
+.trash-icon {
+    color: rgb(255, 47, 47);
+}
+
+.edit-icon {
+    color: #a56dff;
+}
+
+.edit-icon:hover {
+    color: #6d44af;
+}
+
+
+.btn {
+    width: 235px;
+    height: 60px;
+    color:  rgb(0, 99, 230);
+    background-color: white;
+    font-size: 30px;
+    border: 1px solid  rgb(0, 99, 230);
+    outline: none;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: rgb(0, 99, 230);
+    color: white;
+}
+
+// select {
+//     float: right;
+//     width: 200px;
+//     height: 42px;
+//     background-color: white;
+//     font-size: 25px;
+//     padding-left: 10px;
+//     border-radius: 3px;
+//     border: 1px solid #0484aa99;
+//     color: #046380;
+// }
