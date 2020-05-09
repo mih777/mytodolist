@@ -15,7 +15,7 @@ export interface Todo {
 })
 export class MytodosService {
 
-  url: string = 'https://mih777.github.io/mytodolist'
+  url: string = 'https://graph-server777.herokuapp.com'
   //url: string = 'http://localhost:3000'
 
   todos: Todo[] = []
