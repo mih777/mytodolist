@@ -1,12 +1,11 @@
-.list {
-    
-}
 
 .header {
     display: inline;
 }
 
-
+.edit-icon, .trash-icon {
+    font-size: 20px;
+}
 
 .main {
     margin: 0 auto;
@@ -16,12 +15,6 @@
     margin-top: 20px;
     max-width: 100%;
 }
-
-// .container {
-//     /* justify-content: flex-end; */
-//     /* justify-content: center; */
-//     justify-content: space-between;
-// }
 
 .container{
     display: flex;
@@ -34,12 +27,29 @@
 }
 
 .box-1 {
-    flex: 1;
+    flex: 8;
+    //border: 1px solid gray;
 }
 
 .box-2 {
-    flex: 2; 
+    flex: 1; 
+    display: flex;
+    //border: 1px solid gray;
 }
+
+.icon1{
+    flex: 1;
+}
+.icon2{
+    flex: 1;
+}
+
+.outer {
+    text-align: center;
+    
+  }
+
+
 
 a {
     text-decoration: none;
@@ -75,6 +85,20 @@ select {
 
 }
 
+
+
+@media (max-width: 440px) {
+
+    .edit-icon {
+        font-size: 30px;
+    }
+    
+    .trash-icon {
+        display: none;
+    }    
+
+}
+
 @media (max-width: 440px) {
 
     select {
@@ -100,26 +124,6 @@ select {
         margin-bottom: 15px;
     }
 
-    .edit-icon {
-        font-size: 30px;
-    }
     
-    .trash-icon {
-        display: none;
-    }
-
-}
-
-@media (max-width: 487px) {
-
-    
-
-    .edit-icon {
-        font-size: 27px;
-    }
-    
-    .trash-icon {
-        display: none;
-    }
 
 }

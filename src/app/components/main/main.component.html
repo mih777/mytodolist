@@ -11,28 +11,18 @@
     </div>    <!-- class="header" -->
     <!-- <hr> -->
     <div class="list">
-        <ol> 
+        <ul> 
 
             <li>
-                <div class="container" >
-                    <div box-1><a href="">todo Lorem ipsum dolor sit amet consectetur adi</a></div>
-                    <div box-2>
-                        <a href=""><i class="fas fa-edit edit-icon" ></i></a>
-                        <a href=""><i class="fas fa-trash-alt trash-icon" ></i></a>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="container" >
-                    <div box-1><a href="">todo Lorem ipsum dolor sit amet consectetur ad</a></div>
-                    <div box-2>
-                        <a href=""><i class="fas fa-edit edit-icon" ></i></a>
-                        <a href=""><i class="fas fa-trash-alt trash-icon" ></i></a>
+                <div class="container" *ngFor="let todo of todos; index as i">
+                    <div class="box-1">{{i+1}}.<a href=""> {{ todo.title }}</a></div>
+                    <div class="box-2">
+                        <div class="icon1"><a href=""><i class="fas fa-edit edit-icon" ></i></a></div>
+                        <div class="icon2"><a href=""><i class="fas fa-trash-alt trash-icon" ></i></a></div>
                     </div>
                 </div>
             </li>
             
-        </ol>
+        </ul>
     </div>
 </div>

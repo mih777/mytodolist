@@ -10,6 +10,10 @@
     overflow: hidden;
   }
 
+li {
+    list-style-type: none; /* Убираем маркеры */
+}  
+
 .fas ,fa-edit {
     
 }  
