@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
+import { MytodosService, Todo } from 'src/app/services/mytodos.service';
 
 @Component({
   selector: 'app-create',
@@ -7,9 +9,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateComponent implements OnInit {
 
-  constructor() { }
+  form: FormGroup
+  todo: Todo[] = []
+
+  constructor(private service: MytodosService) { }
 
   ngOnInit(): void {
+    this.form = new FormGroup({
+      title: new FormControl(''),
+      category: new FormControl(''),
+      description: new FormControl(''),
+      completed: new FormControl('')
+    })
   }
+
+  submit() {
+    const formData = { ...this.form.value }
+
+    this.service.create({
+      title: formData.title,
+      category: formData.category,
+      description: formData.description,
+      completed: false
+    }).subscribe(todo => {
+      this.todo.push(todo)
+      console.log(todo)
+    })
+
+  }
+
+
 
 }

@@ -1,15 +1,19 @@
 <div class="main">
     <div class="header">
         <div>
-            <button class="btn">create</button>
+            <button class="btn" routerLink="/create">create</button>
+            
             <select>
-                <option>qwert 1</option>
-                <option>qwert 2</option>
-                <option>qwert 3</option>
+                <option>car</option>
+                <option>home</option>
+                <option>programming</option>
+                <option>Angular</option>
+                <option>reference</option>
             </select>
         </div>
     </div>    <!-- class="header" -->
     <!-- <hr> -->
+    <br>
     <div class="list">
         <ul> 
 
@@ -17,7 +21,7 @@
                 <div class="container" *ngFor="let todo of todos; index as i">
                     <div class="box-1">{{i+1}}.<a href=""> {{ todo.title }}</a></div>
                     <div class="box-2">
-                        <div class="icon1"><a href=""><i class="fas fa-edit edit-icon" ></i></a></div>
+                        <div class="icon1"><a routerLink="/update/12"><i class="fas fa-edit edit-icon" ></i></a></div>
                         <div class="icon2"><a href=""><i class="fas fa-trash-alt trash-icon" ></i></a></div>
                     </div>
                 </div>

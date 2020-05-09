@@ -1,1 +1,31 @@
-<p>create works!</p>
+<div class="main">
+    
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        <div class="form-group">
+          <label for="exampleInputPassword1">title</label>
+          <input type="text" class="form-control" formControlName="title">
+        </div>
+        <!-- <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">category</label>
+            <select class="form-control" formControlName="category">
+                <option>car</option>
+                <option>home</option>
+                <option>programming</option>
+                <option>Angular</option>
+                <option>reference</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">descsription</label>
+            <textarea class="form-control" formControlName="description" rows="7"></textarea>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br>
+      <a routerLink="/">Back</a>
+   
+</div>

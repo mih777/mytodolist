@@ -15,32 +15,35 @@ export interface Todo {
 })
 export class MytodosService {
 
+  url: string = 'https://mih777.github.io/mytodolist'
+  //url: string = 'http://localhost:3000'
+
   todos: Todo[] = []
 
   constructor(private http: HttpClient) { }
 
-  create(todo: Todo) {
-    return this.http.post
+  create(todo: Todo)  : Observable<Todo> {
+    return this.http.post<Todo>(`${this.url}/api/mytodos/create`, todo)
   }
 
   getAll() : Observable<Todo[]> {
-    return this.http.get<Todo[]>(`http://localhost:3000/api/mytodos`)
+    return this.http.get<Todo[]>(`${this.url}/api/mytodos`)
   }
 
   getOneById(id: string) : Observable<Todo>{
-    return this.http.get<Todo>(`http://localhost:3000/api/mytodos/${id}`)
+    return this.http.get<Todo>(`${this.url}/api/mytodos/${id}`)
   }
 
   getAllByCategory(category: string) : Observable<Todo[]> {
-    return this.http.get<Todo[]>(`http://localhost:3000/api/mytodos/cat/${category}`)
+    return this.http.get<Todo[]>(`${this.url}/api/mytodos/cat/${category}`)
   }
 
   update(id: string, todo: Todo) : Observable<Todo>{
-    return this.http.put<Todo>(`http://localhost:3000/api/mytodos/update/${id}`, todo )
+    return this.http.put<Todo>(`${this.url}/api/mytodos/update/${id}`, todo )
   }
 
   delete(id: string)  : Observable<Todo>{
-    return this.http.get<Todo>(`http://localhost:3000/api/mytodos/delete/${id}`)
+    return this.http.get<Todo>(`${this.url}/api/mytodos/delete/${id}`)
   }
 
 
