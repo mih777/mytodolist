@@ -10,7 +10,7 @@
 
 .main {
     margin: 0 auto;
-    width: 600px;
+    width: 900px;
     //border: 1px solid gray;
     padding: 5px;
     margin-top: 20px;
@@ -62,6 +62,8 @@ select {
     border: 1px solid #0484aa99;
     color: #046380;
     outline: none;
+    background-image: none;
+    -webkit-appearance: none;
 }
 
 @media (max-width: 650px) {
