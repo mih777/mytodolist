@@ -43,7 +43,7 @@ export class MytodosService {
   }
 
   delete(id: string)  : Observable<Todo>{
-    return this.http.get<Todo>(`${this.url}/api/mytodos/delete/${id}`)
+    return this.http.delete<Todo>(`${this.url}/api/mytodos/delete/${id}`)
   }
 
 

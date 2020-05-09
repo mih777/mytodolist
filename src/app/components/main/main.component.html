@@ -3,7 +3,12 @@
         <div>
             <button class="btn" routerLink="/create">create</button>
             
-            <select>
+            <select 
+ 
+            (input)="inpSelect($event)" 
+            [(ngModel)]="catName"
+            >
+                <option selected="selected">all</option>
                 <option>car</option>
                 <option>home</option>
                 <option>programming</option>
@@ -22,7 +27,11 @@
                     <div class="box-1">{{i+1}}.<a href=""> {{ todo.title }}</a></div>
                     <div class="box-2">
                         <div class="icon1"><a routerLink="/update/12"><i class="fas fa-edit edit-icon" ></i></a></div>
-                        <div class="icon2"><a href=""><i class="fas fa-trash-alt trash-icon" ></i></a></div>
+                        <div class="icon2">
+                            <a href="" 
+                            onclick="event.preventDefault()"
+                            (click)="delete(todo._id)"
+                            ><i class="fas fa-trash-alt trash-icon" ></i></a></div>
                     </div>
                 </div>
             </li>

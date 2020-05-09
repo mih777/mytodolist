@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { MytodosService, Todo } from 'src/app/services/mytodos.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create',
@@ -12,7 +13,10 @@ export class CreateComponent implements OnInit {
   form: FormGroup
   todo: Todo[] = []
 
-  constructor(private service: MytodosService) { }
+  constructor(
+    private service: MytodosService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.form = new FormGroup({
@@ -33,7 +37,7 @@ export class CreateComponent implements OnInit {
       completed: false
     }).subscribe(todo => {
       this.todo.push(todo)
-      console.log(todo)
+      this.router.navigate(['/'])
     })
 
   }
