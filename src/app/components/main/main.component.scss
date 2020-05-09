@@ -67,5 +67,57 @@ select {
 @media (max-width: 650px) {
 
     select {margin-left: 10%;}
+    .edit-icon, .trash-icon {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 440px) {
+
+    select {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main {
+        margin: 0 auto;
+        width: 98%;
+        //border: 1px solid gray;
+        padding: 0;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .container{
+        margin-bottom: 15px;
+    }
+
+    .edit-icon {
+        font-size: 30px;
+    }
+    
+    .trash-icon {
+        display: none;
+    }
+
+}
+
+@media (max-width: 487px) {
+
+    
+
+    .edit-icon {
+        font-size: 27px;
+    }
+    
+    .trash-icon {
+        display: none;
+    }
 
 }
