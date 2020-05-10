@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MytodosService, Todo } from '../../services/mytodos.service'
+import { MytodosService, Todo, Category } from '../../services/mytodos.service'
 
 @Component({
   selector: 'app-main',
@@ -9,6 +9,7 @@ import { MytodosService, Todo } from '../../services/mytodos.service'
 export class MainComponent implements OnInit {
 
   todos: Todo[] = []
+  categories: Category[] = []
   catName = 'all'
 
   constructor(
@@ -16,9 +17,15 @@ export class MainComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.getCategories()
     this.catName == 'all' ? this.getAll() : this.fetchTodosByCategory(this.catName)
-    //this.fetchTodosByCategory(this.catName)
-    //console.log(this.catName)
+  }
+
+  getCategories(){
+    this.service.getAllCategories()
+      .subscribe(res => {
+        this.categories = res
+      })
   }
 
   getAll() {

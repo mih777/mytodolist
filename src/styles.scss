@@ -9,6 +9,7 @@
     //border: 1px solid gray;
     overflow: hidden;
   }
+  
 
 li {
     list-style-type: none; /* Убираем маркеры */
@@ -36,19 +37,19 @@ li {
 }
 
 .edit-icon {
-    color: #a56dff;
+    color: #6068ce;
 }
 
 .edit-icon:hover {
-    color: #6d44af;
+    color: #575ca1;
 }
-
 
 
 
 
 .header {
     display: inline;
+    //border: 1px solid gray;
 }
 
 .edit-icon, .trash-icon {
@@ -57,7 +58,7 @@ li {
 
 .main {
     margin: 0 auto;
-    width: 900px;
+    width: 700px;
     //border: 1px solid gray;
     padding: 5px;
     margin-top: 20px;
@@ -65,21 +66,27 @@ li {
 }
 
 .container{
+    flex: 1;
     display: flex;
+    //width: 100%;
     align-items: stretch;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     //border: 1px solid grey;
     padding-right: 5px;
     margin-bottom: 10px;
 }
 
+
 .box-1 {
+    width: 100%;
     flex: 8;
     //border: 1px solid gray;
 }
 
 .box-2 {
+
+    width: 100%;
     flex: 1; 
     display: flex;
     //border: 1px solid gray;

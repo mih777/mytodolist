@@ -10,17 +10,33 @@ export interface Todo {
   completed: boolean
 }
 
+export interface Category {
+  id?: string
+  title: string
+}
+
 @Injectable({
   providedIn: 'root'
 })
 export class MytodosService {
 
-  url: string = 'https://graph-server777.herokuapp.com'
-  //url: string = 'http://localhost:3000'
+  //url: string = 'https://graph-server777.herokuapp.com'
+  url: string = 'http://localhost:3000'
 
   todos: Todo[] = []
+  categories: Category[] = []
 
   constructor(private http: HttpClient) { }
+
+
+  createCategory(category: Category)  : Observable<Category> {
+    return this.http.post<Category>(`${this.url}/api/mytodos/categories`, category)
+  }
+
+  getAllCategories() : Observable<Category[]> {
+    return this.http.get<Category[]>(`${this.url}/api/mytodos/categories`)
+  }
+
 
   create(todo: Todo)  : Observable<Todo> {
     return this.http.post<Todo>(`${this.url}/api/mytodos/create`, todo)
