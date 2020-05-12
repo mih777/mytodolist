@@ -20,6 +20,7 @@ import { switchMap } from 'rxjs/operators';
 })
 export class UpdateComponent implements OnInit {
 
+  url_img = this.service.url_for_img
   categories
   currentTodo
   message = '';

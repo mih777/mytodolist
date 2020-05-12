@@ -9,6 +9,7 @@ import { MytodosService } from 'src/app/services/mytodos.service';
 })
 export class SingleTodoComponent implements OnInit {
 
+  url_img = this.todoService.url_for_img
   todo: any = {}
 
   constructor(

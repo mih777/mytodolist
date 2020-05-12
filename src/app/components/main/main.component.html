@@ -8,7 +8,7 @@
             (input)="inpSelect($event)" 
             [(ngModel)]="catName"
             >
-                <option selected="selected">all</option>
+                <option selected >all</option>
                 <option *ngFor="let category of categories">{{ category.title }}</option>
                 
             </select>

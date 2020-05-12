@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
 })
 export class CreateComponent implements OnInit {
 
+  url_img = this.service.url_for_img
+
   form: FormGroup
   category_form: FormGroup
   category: Category[] = []

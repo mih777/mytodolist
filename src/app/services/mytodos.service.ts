@@ -21,6 +21,7 @@ export interface Category {
 })
 export class MytodosService {
 
+  url_for_img: string = 'http://localhost:4200'
   url: string = 'https://graph-server777.herokuapp.com'
   //url: string = 'http://localhost:3000'
 
