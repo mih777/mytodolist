@@ -21,8 +21,8 @@ export interface Category {
 })
 export class MytodosService {
 
-  //url: string = 'https://graph-server777.herokuapp.com'
-  url: string = 'http://localhost:3000'
+  url: string = 'https://graph-server777.herokuapp.com'
+  //url: string = 'http://localhost:3000'
 
   todos: Todo[] = []
   categories: Category[] = []
