@@ -5,18 +5,11 @@
           <label for="exampleInputPassword1">title</label>
           <input type="text" class="form-control" formControlName="title">
         </div>
-        <!-- <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div> -->
         <div class="form-group">
             <label for="exampleFormControlSelect1">category</label>
             <select class="form-control" formControlName="category">
-                <option>car</option>
-                <option>home</option>
-                <option>programming</option>
-                <option>Angular</option>
-                <option>reference</option>
+                <option selected="selected">all</option>
+                <option *ngFor="let category of categories">{{ category.title }}</option>
             </select>
           </div>
           <div class="form-group">
@@ -26,6 +19,16 @@
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
       <br>
-      <a routerLink="/">Back</a>
+      <a routerLink="/"><img src="/assets/Sign-Back-icon.png"></a>
+      <br><br>
+
+      <form [formGroup]="category_form" (ngSubmit)="addCategory()">
+        <div class="form-group">
+          <label for="exampleInputPassword1">title</label>
+          <input type="text" class="form-control" formControlName="title">
+        </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
    
 </div>

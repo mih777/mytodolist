@@ -6,8 +6,9 @@ export interface Todo {
   id?: string
   title: string
   category: string
-  description: string
-  completed: boolean
+  description?: string
+  completed?: boolean
+  created_date?: string
 }
 
 export interface Category {
@@ -30,7 +31,7 @@ export class MytodosService {
 
 
   createCategory(category: Category)  : Observable<Category> {
-    return this.http.post<Category>(`${this.url}/api/mytodos/categories`, category)
+    return this.http.post<Category>(`${this.url}/api/mytodos/create-category`, category)
   }
 
   getAllCategories() : Observable<Category[]> {
@@ -42,6 +43,10 @@ export class MytodosService {
     return this.http.post<Todo>(`${this.url}/api/mytodos/create`, todo)
   }
 
+  update(id, data) : Observable<Todo>{
+    return this.http.put<Todo>(`${this.url}/api/mytodos/update/todo/${id}`, data);
+  }
+
   getAll() : Observable<Todo[]> {
     return this.http.get<Todo[]>(`${this.url}/api/mytodos`)
   }
@@ -50,13 +55,15 @@ export class MytodosService {
     return this.http.get<Todo>(`${this.url}/api/mytodos/${id}`)
   }
 
+  get(id) {
+    return this.http.get(`${this.url}/api/mytodos/${id}`);
+  }
+
   getAllByCategory(category: string) : Observable<Todo[]> {
     return this.http.get<Todo[]>(`${this.url}/api/mytodos/cat/${category}`)
   }
 
-  update(id: string, todo: Todo) : Observable<Todo>{
-    return this.http.put<Todo>(`${this.url}/api/mytodos/update/${id}`, todo )
-  }
+  
 
   delete(id: string)  : Observable<Todo>{
     return this.http.delete<Todo>(`${this.url}/api/mytodos/delete/${id}`)

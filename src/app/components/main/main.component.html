@@ -17,9 +17,9 @@
     <br>
     <div class="list">
         <div class="container" *ngFor="let todo of todos; index as i">
-            <div class="box-1">{{i+1}}.<a href=""> {{ todo.title }}</a></div>
+            <div class="box-1">{{i+1}}.<a [routerLink]="['/single-todo', todo._id]"> {{ todo.title }}</a></div>
             <div class="box-2">
-                <div class="icon1"><a routerLink="/update/12"><i class="fas fa-edit edit-icon" ></i></a></div>
+                <div class="icon1"><a [routerLink]="['/update', todo._id]"><i class="fas fa-edit edit-icon" ></i></a></div>
                 <div class="icon2">
                     <a href="" 
                     onclick="event.preventDefault()"

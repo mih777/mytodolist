@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import { MytodosService, Todo } from 'src/app/services/mytodos.service';
+import { MytodosService, Todo, Category } from 'src/app/services/mytodos.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,7 +11,11 @@ import { Router } from '@angular/router';
 export class CreateComponent implements OnInit {
 
   form: FormGroup
+  category_form: FormGroup
+  category: Category[] = []
   todo: Todo[] = []
+
+  categories: Category[] = []
 
   constructor(
     private service: MytodosService,
@@ -19,11 +23,36 @@ export class CreateComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.getCategories()
     this.form = new FormGroup({
       title: new FormControl(''),
       category: new FormControl(''),
       description: new FormControl(''),
       completed: new FormControl('')
+    })
+
+    this.category_form = new FormGroup({
+      title: new FormControl('')
+    })
+  }
+
+  getCategories(){
+    this.service.getAllCategories()
+      .subscribe(res => {
+        this.categories = res
+      })
+  }
+
+  addCategory(){
+    const formData = { ...this.category_form.value }
+
+    this.service.createCategory({
+      title: formData.title
+    }).subscribe(category => {
+      this.category.push(category)
+      console.log(this.category)
+      this.ngOnInit()
+      this.category_form.reset()
     })
   }
 
@@ -34,7 +63,7 @@ export class CreateComponent implements OnInit {
       title: formData.title,
       category: formData.category,
       description: formData.description,
-      completed: false
+      //completed: false
     }).subscribe(todo => {
       this.todo.push(todo)
       this.router.navigate(['/'])

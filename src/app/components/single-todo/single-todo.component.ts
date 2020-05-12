@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import { MytodosService } from 'src/app/services/mytodos.service';
 
 @Component({
   selector: 'app-single-todo',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingleTodoComponent implements OnInit {
 
-  constructor() { }
+  todo: any = {}
+
+  constructor(
+    private route: ActivatedRoute,
+    private todoService: MytodosService
+  ) { }
 
   ngOnInit(): void {
+    this.route.params.subscribe((params: Params) => {
+      this.todoService.getOneById(params.id)
+        .subscribe((res) => {
+          this.todo = res
+        })
+    })
   }
 
 }
