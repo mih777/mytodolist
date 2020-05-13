@@ -1,0 +1,96 @@
+{
+  "configVersion": 1,
+  "timestamp": 1589392967216,
+  "index": "https://mih777.github.io/mytodolist/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://mih777.github.io/mytodolist/favicon.ico",
+        "https://mih777.github.io/mytodolist/index.html",
+        "https://mih777.github.io/mytodolist/main-es2015.deb673c45d3a73e6d7d6.js",
+        "https://mih777.github.io/mytodolist/main-es5.deb673c45d3a73e6d7d6.js",
+        "https://mih777.github.io/mytodolist/manifest.webmanifest",
+        "https://mih777.github.io/mytodolist/polyfills-es2015.1f913f16a2d346cc8bdc.js",
+        "https://mih777.github.io/mytodolist/polyfills-es5.1a3c78b07cd6f16c6e9a.js",
+        "https://mih777.github.io/mytodolist/runtime-es2015.0811dcefd377500b5b1a.js",
+        "https://mih777.github.io/mytodolist/runtime-es5.0811dcefd377500b5b1a.js",
+        "https://mih777.github.io/mytodolist/styles.597f7ba11ca547fcc7f7.css"
+      ],
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Roboto",
+        "https:\\/\\/mih777\\.github\\.io\\/mytodolist\\/~bootstrap\\/dist\\/css\\/bootstrap\\.min\\.css"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://mih777.github.io/mytodolist/assets/Sign-Back-icon.png",
+        "https://mih777.github.io/mytodolist/assets/icons/icon-128x128.png",
+        "https://mih777.github.io/mytodolist/assets/icons/icon-144x144.png",
+        "https://mih777.github.io/mytodolist/assets/icons/icon-152x152.png",
+        "https://mih777.github.io/mytodolist/assets/icons/icon-192x192.png",
+        "https://mih777.github.io/mytodolist/assets/icons/icon-384x384.png",
+        "https://mih777.github.io/mytodolist/assets/icons/icon-512x512.png",
+        "https://mih777.github.io/mytodolist/assets/icons/icon-72x72.png",
+        "https://mih777.github.io/mytodolist/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "/api/mytodos",
+      "patterns": [
+        "https:\\/\\/graph-server777\\.herokuapp\\.com\\/.*"
+      ],
+      "strategy": "performance",
+      "maxSize": 5,
+      "maxAge": 0,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "https://mih777.github.io/mytodolist/assets/Sign-Back-icon.png": "47567bec05a89e6f050527eb93d0a9794b19ddf2",
+    "https://mih777.github.io/mytodolist/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://mih777.github.io/mytodolist/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://mih777.github.io/mytodolist/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://mih777.github.io/mytodolist/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://mih777.github.io/mytodolist/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://mih777.github.io/mytodolist/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://mih777.github.io/mytodolist/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://mih777.github.io/mytodolist/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://mih777.github.io/mytodolist/favicon.ico": "89394d14eb3ae914c4ad83b50491a0aab9102292",
+    "https://mih777.github.io/mytodolist/index.html": "7318dce8b1f250b2251b7dfe247ca11a4b2955c1",
+    "https://mih777.github.io/mytodolist/main-es2015.deb673c45d3a73e6d7d6.js": "4e5a3516f0e5b84ba42786d208f9888a52a7d5b5",
+    "https://mih777.github.io/mytodolist/main-es5.deb673c45d3a73e6d7d6.js": "618a333e623ea07827825f863cbd008a82247fd6",
+    "https://mih777.github.io/mytodolist/manifest.webmanifest": "3dc88e7540adc8d70020b1008801924a1779d2ef",
+    "https://mih777.github.io/mytodolist/polyfills-es2015.1f913f16a2d346cc8bdc.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
+    "https://mih777.github.io/mytodolist/polyfills-es5.1a3c78b07cd6f16c6e9a.js": "87006d1f609b94ee122cc7790b1ddb5e03d8eaa6",
+    "https://mih777.github.io/mytodolist/runtime-es2015.0811dcefd377500b5b1a.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://mih777.github.io/mytodolist/runtime-es5.0811dcefd377500b5b1a.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://mih777.github.io/mytodolist/styles.597f7ba11ca547fcc7f7.css": "12b78a961cbfa55fb4cf62757a05d31756729306"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
