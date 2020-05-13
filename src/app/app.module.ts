@@ -8,7 +8,9 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { CreateComponent } from './components/create/create.component';
 import { UpdateComponent } from './components/update/update.component';
-import { SingleTodoComponent } from './components/single-todo/single-todo.component'
+import { SingleTodoComponent } from './components/single-todo/single-todo.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment'
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { SingleTodoComponent } from './components/single-todo/single-todo.compon
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

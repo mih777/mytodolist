@@ -23,7 +23,6 @@ export class MytodosService {
 
   url_for_img: string = 'https://mih777.github.io/mytodolist'
   url: string = 'https://graph-server777.herokuapp.com'
-  //url: string = 'http://localhost:3000'
 
   todos: Todo[] = []
   categories: Category[] = []

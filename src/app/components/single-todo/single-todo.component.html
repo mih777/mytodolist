@@ -3,7 +3,7 @@
 
         <small style="color: rgb(189, 9, 9);">{{ todo.category }}</small>
 
-        <h3>{{ todo.title }}</h3>
+        <a [routerLink]="['/update', todo._id]"><h3>{{ todo.title }}</h3></a>
 
         <p>{{ todo.description }}</p>
     </div>
@@ -11,5 +11,4 @@
     <br>
       <a routerLink="/"><img src="{{url_img}}/assets/Sign-Back-icon.png"></a>
 
-       
 </div>

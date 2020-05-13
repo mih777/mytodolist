@@ -11,25 +11,21 @@ export class MainComponent implements OnInit {
   todos: Todo[] = []
   categories: Category[] = []
    
-  catName = 'all'
+  static catName = 'all'
 
   constructor(
     private service: MytodosService
   ) { }
 
   
-
   ngOnInit(): void {
     this.getCategories()
-    this.catName == 'all' ? this.getAll() : this.fetchTodosByCategory(this.catName)
-
+    MainComponent.catName == 'all' ? this.getAll() : this.fetchTodosByCategory(MainComponent.catName)
   }
-
   
   inpSelect(event){
-    this.catName = event.target.value
-    this.catName == 'all' ? this.getAll() : this.fetchTodosByCategory(this.catName)
-    //this.todoService.catName == 'all' ? this.fetchAllTodos() : this.fetchTodosByCategory(this.todoService.catName)
+    MainComponent.catName = event.target.value
+    MainComponent.catName == 'all' ? this.getAll() : this.fetchTodosByCategory(MainComponent.catName)
   }
 
 
@@ -60,8 +56,7 @@ export class MainComponent implements OnInit {
   delete(id: string): void{
     this.service.delete(id)
       .subscribe(() => {
-        //console.log('reagiruet')
-        this.getAll()
+        MainComponent.catName == 'all' ? this.getAll() : this.fetchTodosByCategory(MainComponent.catName)
       }) 
     
   }
