@@ -29,7 +29,6 @@ export class MytodosService {
 
   constructor(private http: HttpClient) { }
 
-
   createCategory(category: Category)  : Observable<Category> {
     return this.http.post<Category>(`${this.url}/api/mytodos/create-category`, category)
   }
@@ -37,7 +36,6 @@ export class MytodosService {
   getAllCategories() : Observable<Category[]> {
     return this.http.get<Category[]>(`${this.url}/api/mytodos/categories`)
   }
-
 
   create(todo: Todo)  : Observable<Todo> {
     return this.http.post<Todo>(`${this.url}/api/mytodos/create`, todo)
