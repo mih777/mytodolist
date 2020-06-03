@@ -13,7 +13,28 @@ select {
     -webkit-appearance: none;
 }
 
+.disp-flex{
+    flex: 1;
+}
 
+.paginate {
+    width: 150px;
+    height: 41px;
+    background-color: white;
+    font-size: 22px;
+    border: 1px solid #0063e6;
+    outline: none;
+    border-radius: 3px;
+}
+
+.prev{
+    color:  rgb(8, 99, 105);
+    margin-right: 30px;
+}
+
+.next{
+    color:  rgb(7, 64, 117);
+}
 
 .btn {
     width: 235px;

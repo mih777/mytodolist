@@ -14,31 +14,38 @@
         </div>
     </div>    <!-- class="header" -->
     <br>
-    Количество на странице
-    <select (input)="qwant($event)">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option selected>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-        <option>12</option>
-        <option>13</option>
-        <option>14</option>
-        <option>15</option>
-        <option>16</option>
-        <option>17</option>
-    </select>
+    <h3 style="color: rgb(45, 121, 15);"> 
+    
+    Категория: {{ staticVar }} всего {{ qwantity }} штуки 
+    </h3>
+    
+    
     <br>
-    <button (click)="decreese()"> << </button>
-    <button (click)="increese()"> >> </button>
+    
+    <div style="display: flex;">
+        <button type="button" class="paginate prev disp-flex" (click)="decreese()"> << prev </button>
+        <button type="button" class="paginate next disp-flex" (click)="increese()"> next >> </button>
+        <select (input)="qwant($event)" class="disp-flex">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option selected>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+        </select><br>
+    </div>
     <hr>
-    {{ qwantity }}
-    <hr>
+    
     <div class="list">
         <div class="container" *ngFor="let todo of todos; index as i">
             <div class="box-1">{{i+1}}.<a [routerLink]="['/single-todo', todo._id]"> {{ todo.title }}</a></div>

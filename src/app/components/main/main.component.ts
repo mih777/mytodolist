@@ -22,6 +22,10 @@ export class MainComponent implements OnInit {
     private router: Router
   ) { }
 
+  get staticVar(){
+    return MainComponent.catName
+  }
+
   ngOnInit(): void {
     this.getCategories()
     this.getItemsQwantity()
