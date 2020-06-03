@@ -14,13 +14,6 @@ select {
 }
 
 
-.disp-flex{
-    flex: 8;
-}
-
-.disp-flex2{
-    flex: 1;
-}
 
 .small-color{
     color: rgb(45, 121, 15);
@@ -42,16 +35,23 @@ select {
     border: 1px solid #0063e6;
     outline: none;
     border-radius: 3px;
+    
 }
+.paginate-container{
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+
 
 .prev{
     color:  rgb(8, 99, 105);
-    margin-right: 15px;
+    
 }
 
 .next{
     color:  rgb(8, 99, 105);
-    margin-right: 15px;
+    
 }
 
 .btn {
@@ -77,6 +77,11 @@ select {
         font-size: 20px;
     }
 
+    .paginate-container{
+        display: flex; 
+        justify-content: space-between;
+    }
+
 }
 
 
@@ -89,11 +94,18 @@ select {
     
     .trash-icon {
         display: none;
-    }    
+    }  
+    
+    .paginate-container{
+        display: flex; 
+        justify-content: space-between;
+    }
 
 }
 
 @media (max-width: 440px) {
+
+    
 
     select {
         width: 100%;
@@ -118,6 +130,9 @@ select {
         margin-bottom: 15px;
     }
 
-    
+    .paginate-container{
+        display: flex; 
+        justify-content: space-between;
+    }
 
 }

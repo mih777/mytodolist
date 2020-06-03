@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class MainComponent implements OnInit {
 
+  togle = false
+
   todos: Todo[] = []
   categories: Category[] = []
 
