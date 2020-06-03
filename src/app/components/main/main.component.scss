@@ -7,15 +7,28 @@ select {
     padding-left: 10px;
     border-radius: 3px;
     //border: 1px solid #0484aa99;
-    color: #046380;
+    color: #4982a5;
     outline: none;
     background-image: none;
     -webkit-appearance: none;
 }
 
+
 .disp-flex{
     flex: 1;
 }
+
+.small-color{
+    color: rgb(45, 121, 15);
+    font-size: 14px;
+}
+
+.small-color-qwantity{
+    color: #959e54;
+    font-size: 21px;
+}
+
+
 
 .paginate {
     width: 150px;

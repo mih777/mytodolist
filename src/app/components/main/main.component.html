@@ -7,17 +7,22 @@
  
             (input)="inpSelect($event)" 
             >
-                <option selected="selected">all</option>
-                <option *ngFor="let category of categories">{{ category.title }}</option>
+                <option selected>category</option>
+                <option *ngFor="let category of categories" >{{ category.title }}</option>
                 <option>DELETE CATEGORY</option>
             </select>
         </div>
     </div>    <!-- class="header" -->
     <br>
-    <h3 style="color: rgb(45, 121, 15);"> 
-    
-    Категория: {{ staticVar }} всего {{ qwantity }} штуки 
-    </h3>
+    <hr>
+    <div style="margin-left: 100px;">
+        <h3 style="color: #1975a2; " > 
+            <small class="small-color">категория  </small>
+             {{ staticVar }} 
+            <small class="small-color">всего  </small> 
+            <small class="small-color-qwantity">  {{ qwantity }} </small>  
+           </h3>
+    </div>
     
     
     <br>
@@ -25,7 +30,7 @@
     <div style="display: flex;">
         <button type="button" class="paginate prev disp-flex" (click)="decreese()"> << prev </button>
         <button type="button" class="paginate next disp-flex" (click)="increese()"> next >> </button>
-        <select (input)="qwant($event)" class="disp-flex">
+        <select (input)="qwant($event)" class="disp-flex" >
             <option>1</option>
             <option>2</option>
             <option>3</option>
