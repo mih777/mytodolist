@@ -22,7 +22,9 @@ export interface Category {
 export class MytodosService {
 
   url_for_img: string = 'https://mih777.github.io/mytodolist'
-  url: string = 'https://graph-server777.herokuapp.com'
+  //url: string = 'https://graph-server777.herokuapp.com'
+
+  url = 'http://localhost:3000'
 
   todos: Todo[] = []
   categories: Category[] = []
@@ -45,8 +47,12 @@ export class MytodosService {
     return this.http.put<Todo>(`${this.url}/api/mytodos/update/todo/${id}`, data);
   }
 
-  getAll() : Observable<Todo[]> {
-    return this.http.get<Todo[]>(`${this.url}/api/mytodos`)
+  getAll(pagination , page) : Observable<Todo[]> {
+    return this.http.get<Todo[]>(`${this.url}/api/mytodos?pagination=${pagination}&page=${page}`)
+  }
+
+  getAllNoParams() : Observable<Todo[]> {
+    return this.http.get<Todo[]>(`${this.url}/api/mytodos/noparams`)
   }
 
   getOneById(id: string) : Observable<Todo>{
@@ -57,11 +63,22 @@ export class MytodosService {
     return this.http.get(`${this.url}/api/mytodos/${id}`);
   }
 
-  getAllByCategory(category: string) : Observable<Todo[]> {
-    return this.http.get<Todo[]>(`${this.url}/api/mytodos/cat/${category}`)
+  getAllByCategory(category: string, pagination, page) : Observable<Todo[]> {
+    return this.http.get<Todo[]>(`${this.url}/api/mytodos/cat/${category}?pagination=${pagination}&page=${page}`)
   }
 
-  
+  getAllByCategoryNoParams(category: string) : Observable<Todo[]> {
+    return this.http.get<Todo[]>(`${this.url}/api/mytodos/cat/${category}/noparams`)
+  }
+
+  deleteAllByCategory(category_title: string){
+    return this.http.delete(`${this.url}/api/mytodos/delete-all/${category_title}`)
+  }
+
+  deleteCategory(category_id: string){
+    return this.http.delete(`${this.url}/api/mytodos/delete-category/${category_id}`)
+  }
+
 
   delete(id: string)  : Observable<Todo>{
     return this.http.delete<Todo>(`${this.url}/api/mytodos/delete/${id}`)

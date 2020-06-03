@@ -10,7 +10,8 @@ import { CreateComponent } from './components/create/create.component';
 import { UpdateComponent } from './components/update/update.component';
 import { SingleTodoComponent } from './components/single-todo/single-todo.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment'
+import { environment } from '../environments/environment';
+import { DeleteCategoryComponent } from './components/delete-category/delete-category.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { environment } from '../environments/environment'
     MainComponent,
     CreateComponent,
     UpdateComponent,
-    SingleTodoComponent
+    SingleTodoComponent,
+    DeleteCategoryComponent
   ],
   imports: [
     BrowserModule,
