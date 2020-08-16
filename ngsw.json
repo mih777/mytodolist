@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1591213191486,
+  "timestamp": 1597597876605,
   "index": "https://mih777.github.io/mytodolist/index.html",
   "assetGroups": [
     {
@@ -17,7 +17,7 @@
         "https://mih777.github.io/mytodolist/polyfills-es5.1a3c78b07cd6f16c6e9a.js",
         "https://mih777.github.io/mytodolist/runtime-es2015.0811dcefd377500b5b1a.js",
         "https://mih777.github.io/mytodolist/runtime-es5.0811dcefd377500b5b1a.js",
-        "https://mih777.github.io/mytodolist/styles.ce65b7b25c4ef901a158.css"
+        "https://mih777.github.io/mytodolist/styles.d1780b0e5d7299eb519d.css"
       ],
       "patterns": [
         "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Roboto",
@@ -65,7 +65,7 @@
     "https://mih777.github.io/mytodolist/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://mih777.github.io/mytodolist/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://mih777.github.io/mytodolist/favicon.ico": "89394d14eb3ae914c4ad83b50491a0aab9102292",
-    "https://mih777.github.io/mytodolist/index.html": "7964ae92d1d61d713c233bd9cae7ad9f93eed5ed",
+    "https://mih777.github.io/mytodolist/index.html": "cb276b59ab5f7ab0386296bbe0f5646d6fb853c4",
     "https://mih777.github.io/mytodolist/main-es2015.29f37f86112968924e05.js": "46980365646096dbb0b61203a52481d681e60e74",
     "https://mih777.github.io/mytodolist/main-es5.29f37f86112968924e05.js": "bb8b45ef0510a1a4fa4c412a89f79103d4f530d0",
     "https://mih777.github.io/mytodolist/manifest.webmanifest": "3dc88e7540adc8d70020b1008801924a1779d2ef",
@@ -73,7 +73,7 @@
     "https://mih777.github.io/mytodolist/polyfills-es5.1a3c78b07cd6f16c6e9a.js": "87006d1f609b94ee122cc7790b1ddb5e03d8eaa6",
     "https://mih777.github.io/mytodolist/runtime-es2015.0811dcefd377500b5b1a.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "https://mih777.github.io/mytodolist/runtime-es5.0811dcefd377500b5b1a.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://mih777.github.io/mytodolist/styles.ce65b7b25c4ef901a158.css": "c5d1a2275d397e83bdffba8ea221656d713ac512"
+    "https://mih777.github.io/mytodolist/styles.d1780b0e5d7299eb519d.css": "7586c6070935c2df5dd6717835c9080070ff8d56"
   },
   "navigationUrls": [
     {
