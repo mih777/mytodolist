@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class MainComponent implements OnInit {
 
   togle = false
+  loading = false
 
   todos: Todo[] = []
   categories: Category[] = []
@@ -47,19 +48,22 @@ export class MainComponent implements OnInit {
   
 
   getAll() {
+    this.loading = true
     this.service.getAll(MainComponent.pagination, this.page)
       .subscribe(res => {
         this.todos = res
+        this.loading = false
       })
   }
 
   
 
   fetchTodosByCategory(catName: string) {
-    
+    this.loading = true
     this.service.getAllByCategory(catName, MainComponent.pagination, this.page)
       .subscribe(result => {
         this.todos = result
+        this.loading = false
       })
   }
 
