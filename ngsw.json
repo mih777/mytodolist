@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1598288407536,
+  "timestamp": 1598289024649,
   "index": "https://mih777.github.io/mytodolist/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "https://mih777.github.io/mytodolist/favicon.ico",
         "https://mih777.github.io/mytodolist/index.html",
-        "https://mih777.github.io/mytodolist/main-es2015.24174be28ad3a3ff2184.js",
-        "https://mih777.github.io/mytodolist/main-es5.24174be28ad3a3ff2184.js",
+        "https://mih777.github.io/mytodolist/main-es2015.dec5f720cda4d43b10ca.js",
+        "https://mih777.github.io/mytodolist/main-es5.dec5f720cda4d43b10ca.js",
         "https://mih777.github.io/mytodolist/manifest.webmanifest",
         "https://mih777.github.io/mytodolist/polyfills-es2015.1f913f16a2d346cc8bdc.js",
         "https://mih777.github.io/mytodolist/polyfills-es5.1a3c78b07cd6f16c6e9a.js",
@@ -67,9 +67,9 @@
     "https://mih777.github.io/mytodolist/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://mih777.github.io/mytodolist/assets/preloader.svg": "978ee05ed26ac5367730aad5f5e65fddf8907086",
     "https://mih777.github.io/mytodolist/favicon.ico": "89394d14eb3ae914c4ad83b50491a0aab9102292",
-    "https://mih777.github.io/mytodolist/index.html": "f60de0c2e1b58aa84ebf975f1267049e65abfb73",
-    "https://mih777.github.io/mytodolist/main-es2015.24174be28ad3a3ff2184.js": "47a4a8fba69ab8a1cf22e324e291b3c4e0907b73",
-    "https://mih777.github.io/mytodolist/main-es5.24174be28ad3a3ff2184.js": "3422d01fbf9156eac1760a57a01b148d7d801c90",
+    "https://mih777.github.io/mytodolist/index.html": "1fa38d5037a2b1606d134fa120c3c0f056932a28",
+    "https://mih777.github.io/mytodolist/main-es2015.dec5f720cda4d43b10ca.js": "5763d719f6bf8e0de5c9fe9be232e35248e451eb",
+    "https://mih777.github.io/mytodolist/main-es5.dec5f720cda4d43b10ca.js": "0ff8d1eedbd87992a4ac8a7047aef37a2ef9817a",
     "https://mih777.github.io/mytodolist/manifest.webmanifest": "3dc88e7540adc8d70020b1008801924a1779d2ef",
     "https://mih777.github.io/mytodolist/polyfills-es2015.1f913f16a2d346cc8bdc.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "https://mih777.github.io/mytodolist/polyfills-es5.1a3c78b07cd6f16c6e9a.js": "87006d1f609b94ee122cc7790b1ddb5e03d8eaa6",
