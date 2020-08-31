@@ -33,6 +33,17 @@
                     <option>3</option>
                     <option>4</option>
                     <option selected>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
                 </select>
             </div>
         </div>
@@ -57,7 +68,7 @@
     
     <hr>
     
-    <div class="list" *ngIf="!loading; else preloader">
+    <div class="list">
         <div class="container" *ngFor="let todo of todos; index as i">
             <div class="box-1">{{i+1}}.<a [routerLink]="['/single-todo', todo._id]"> {{ todo.title }}</a></div>
             <div class="box-2">
@@ -69,18 +80,5 @@
                     ><i class="fas fa-trash-alt trash-icon" ></i></a></div>
             </div>
         </div>
-        
     </div>
-    
-    <ng-template #preloader >
-        <div class="preloader">
-            <h3>Heroku просыпается, данные грузятся.....</h3>
-            <div class="spinner-border text-success" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-    </ng-template>   
-    
 </div>
-
-

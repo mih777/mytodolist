@@ -37,14 +37,14 @@ export class CreateComponent implements OnInit {
       title: new FormControl('')
     })
   }
-
+  //getCategories
   getCategories(){
     this.service.getAllCategories()
       .subscribe(res => {
         this.categories = res
       })
   }
-
+  // addCategory
   addCategory(){
     const formData = { ...this.category_form.value }
 
